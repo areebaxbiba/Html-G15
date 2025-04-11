@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Front Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="images.png">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .top-header {
+      background-color: #007bff;
+      color: white;
+      padding: 5px 0;
+    }
+    .top-header .contact-info {
+      font-size: 14px;
+    }
+    .top-header .top-right {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 15px;
+    }
+    .main-navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #007bff;
+    }
+    .grade-level img, .staffs img {
+      width: 100%;
+      height: auto;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 30px 0;
+    }
+    .footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+    .intro-section {
+      padding: 60px 0;
+    }
+    .intro-section .read-more {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero-section {
+      position: relative;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .hero-img {
+      width: 100%;
+      height: auto;
+    }
+    .contact-form {
+      position: absolute;
+      top: 20%;
+      right: 10%;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.card {
+  transition: all 0.3s ease-in-out;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <div class="container-fluid top-header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="contact-info">
+        <i class="fas fa-phone"></i> 0897454321 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> info@schoolname.com
+      </div>
+      <div class="top-right">
+        <span><a href="#" class="text-white">Login</a> / <a href="#" class="text-white">Sign up</a></span>
+        <input type="text" placeholder="Search..." class="form-control form-control-sm" style="width: 150px;">
+        <span class="text-white">High School | Middle School | Entrance Exams | Help</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light main-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">LOGO HERE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Subjects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Our Partners</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Schools</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Entrance Exams</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Background Image and Form -->
+<div class="container-fluid my-5">
+  <div class="bg-image d-flex align-items-center" style="background-image: url('https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; height: 400px; border-radius: 10px;">
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-md-5">
+          <div class="bg-white p-4 rounded shadow">
+            <h5 class="mb-3 text-primary">Get In Touch!</h5>
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email Address">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Now!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Intro Section with Text and Image -->
+  <div class="container intro-section">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>It is a long established fact that a reader will be</h2>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="About Our School" class="img-fluid rounded shadow-sm">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- By Grade Level Section -->
+<div class="container my-5">
+  <h2 class="text-center mb-4 text-primary">By Grade Level</h2>
+  <div class="row text-center">
+    
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Elementary School">
+        <div class="card-body">
+          <h5 class="card-title">Elementary School</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Middle School">
+        <div class="card-body">
+          <h5 class="card-title">Middle School</h5>
+        </div>
+      </div>
+    </div>
+    
+    
+
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="High School">
+        <div class="card-body">
+          <h5 class="card-title">High School</h5>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Features Section with Thumbnails -->
+<div class="container my-5">
+  <div class="row text-center">
+    
+    <div class="col-md-3 mb-4">
+      <div class="p-4 border rounded h-100 shadow-sm">
+        <img src="10433166.png" width= 100 
+             class="rounded-circle mb-3" alt="Academic Excellence">
+        <h5>Academic Excellence</h5>
+        <p>Providing top-tier education with certified faculty and proven results.</p>
+        <a href="#" class="text-primary fw-bold">Read More</a>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+      <div class="p-4 border rounded h-100 shadow-sm">
+        <img src="3902173.png" width= 100 
+             class="rounded-circle mb-3" alt="Creative Programs">
+        <h5>Creative Programs</h5>
+        <p>From arts to sciences, students enjoy engaging, hands-on learning.</p>
+        <a href="#" class="text-primary fw-bold">Read More</a>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+      <div class="p-4 border rounded h-100 shadow-sm">
+        <img src="color-icon-for-management-vector.jpg" width= 100 
+             class="rounded-circle mb-3" alt="Modern Facilities">
+        <h5>Modern Facilities</h5>
+        <p>Equipped labs, digital classrooms, and modern libraries for all levels.</p>
+        <a href="#" class="text-primary fw-bold">Read More</a>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+      <div class="p-4 border rounded h-100 shadow-sm">
+        <img src="8074788.png" width= 100
+             class="rounded-circle mb-3" alt="Supportive Environment">
+        <h5>Supportive Environment</h5>
+        <p>Inclusive, friendly campus where every student feels at home.</p>
+        <a href="#" class="text-primary fw-bold">Read More</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- School Features Section -->
+<div class="container my-5">
+  <h3 class="text-center mb-4">Why Choose Our School</h3>
+  <div class="row g-4">
+
+    <!-- Feature 1 -->
+    <div class="col-md-4">
+      <div class="d-flex align-items-start border rounded p-3 h-100 shadow-sm">
+        <div class="me-3">
+          <span class="badge bg-primary rounded-circle px-3 py-2 fs-5">1</span>
+        </div>
+        <div>
+          <h5>Experienced Teachers</h5>
+          <p>Highly qualified staff dedicated to your child’s growth and success.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="col-md-4">
+      <div class="d-flex align-items-start border rounded p-3 h-100 shadow-sm">
+        <div class="me-3">
+          <span class="badge bg-primary rounded-circle px-3 py-2 fs-5">2</span>
+        </div>
+        <div>
+          <h5>Delicious Food</h5>
+          <p>Nutritional meals prepared fresh for a healthy student lifestyle.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class="col-md-4">
+      <div class="d-flex align-items-start border rounded p-3 h-100 shadow-sm">
+        <div class="me-3">
+          <span class="badge bg-primary rounded-circle px-3 py-2 fs-5">3</span>
+        </div>
+        <div>
+          <h5>Physical Activity</h5>
+          <p>Regular exercise and games to promote fitness and wellness.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 4 -->
+    <div class="col-md-4">
+      <div class="d-flex align-items-start border rounded p-3 h-100 shadow-sm">
+        <div class="me-3">
+          <span class="badge bg-primary rounded-circle px-3 py-2 fs-5">4</span>
+        </div>
+        <div>
+          <h5>Transportation</h5>
+          <p>Safe and timely transport for students across the city.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 5 -->
+    <div class="col-md-4">
+      <div class="d-flex align-items-start border rounded p-3 h-100 shadow-sm">
+        <div class="me-3">
+          <span class="badge bg-primary rounded-circle px-3 py-2 fs-5">5</span>
+        </div>
+        <div>
+          <h5>Love and Care</h5>
+          <p>A nurturing environment that supports emotional well-being.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 6 -->
+    <div class="col-md-4">
+      <div class="d-flex align-items-start border rounded p-3 h-100 shadow-sm">
+        <div class="me-3">
+          <span class="badge bg-primary rounded-circle px-3 py-2 fs-5">6</span>
+        </div>
+        <div>
+          <h5>Sports</h5>
+          <p>Wide range of sports to build teamwork, confidence, and fun.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Our Staff Section -->
+<div class="container my-5">
+  <h3 class="text-center mb-4">Our Staff</h3>
+  <div class="row g-4">
+
+    <!-- Staff Member 1 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card text-center border-0 shadow-sm">
+        <img src="142207-phones-feature-what-is-apple-face-id-and-how-does-it-work-image1-5d72kjh6lq.avif" class="card-img-top" alt="Ms. Sarah Ahmed" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Ms. Sarah Ahmed</h5>
+          <p class="text-muted mb-2">Math Teacher</p>
+          <p class="card-text">Expert in simplifying complex math concepts for young minds.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Staff Member 2 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card text-center border-0 shadow-sm">
+        <img src="businessman-suit-looking-camera-over-white-background-id-photo-portrait-businessman-suit-looking-friendly-camera-158631880.webp" class="card-img-top" alt="Mr. Ali Khan" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Mr. Ali Khan</h5>
+          <p class="text-muted mb-2">Science Teacher</p>
+          <p class="card-text">Passionate about interactive science experiments and discovery.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Staff Member 3 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card text-center border-0 shadow-sm">
+        <img src="ID-Photo-Requirements-for-Passport-and-Identity-Card.webp" class="card-img-top" alt="Ms. Amna Iqbal" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Ms. Amna Iqbal</h5>
+          <p class="text-muted mb-2">Principal</p>
+          <p class="card-text">Committed to academic excellence and a caring school environment.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Staff Member 4 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card text-center border-0 shadow-sm">
+        <img src="passport-photo-portrait-young-man-600nw-2437772333.webp" class="card-img-top" alt="Mr. Faisal Raza" style="height: 250px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Mr. Faisal Raza</h5>
+          <p class="text-muted mb-2">English Teacher</p>
+          <p class="card-text">Dedicated to building strong communication skills in students.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Upcoming Events Section -->
+<div class="container my-5">
+  <h3 class="text-center mb-4">Upcoming Events</h3>
+  <div class="row g-4">
+
+    <!-- Event 1 -->
+    <div class="col-md-6">
+      <div class="card border-0 shadow-sm p-3" style="background-color: #e1e3e4;">
+        <div class="d-flex align-items-center mb-3">
+          <!-- Date Box -->
+          <div class="bg-primary text-white text-center px-3 py-2 rounded me-3">
+            <h6 class="mb-0">25</h6>
+            <small>OCT 2025</small>
+          </div>
+          <!-- Event Title -->
+          <h5 class="card-title mb-0">Annual Science Fair</h5>
+        </div>
+        <p class="card-text">Join us to experience fun scientific experiments and student innovations. Open for parents and guests.</p>
+        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded mb-3" alt="Event 1">
+        <a href="#" class="text-primary fw-bold">Read More</a>
+      </div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="col-md-6">
+      <div class="card border-0 shadow-sm p-3" style="background-color: #e1e3e4;">
+        <div class="d-flex align-items-center mb-3">
+          <!-- Date Box -->
+          <div class="bg-primary text-white text-center px-3 py-2 rounded me-3">
+            <h6 class="mb-0">10</h6>
+            <small>NOV 2025</small>
+          </div>
+          <!-- Event Title -->
+          <h5 class="card-title mb-0">Sports Day</h5>
+        </div>
+        <p class="card-text">A fun-filled day of athletic events, team spirit, and awards. Don't miss the closing ceremony.</p>
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded mb-3" alt="Event 2">
+        <a href="#" class="text-primary fw-bold">Read More</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Toppers 2016–2017 Section -->
+<div class="container my-5">
+  <h3 class="text-center mb-4">Toppers 2016–2017</h3>
+  <div class="row g-4 justify-content-center">
+
+    <!-- Topper 1 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="text-center bg-light p-4 rounded h-100">
+        <img src="sage-2_o.jpg" class="img-fluid rounded-circle mb-3" alt="Topper 1" style="width: 120px; height: 120px; object-fit: cover;">
+        <h5 class="mb-1">Ayesha Siddiqui</h5>
+        <small class="text-muted">Class 10 &nbsp;&nbsp;&nbsp; Marks 96%</small>
+      </div>
+    </div>
+
+    <!-- Topper 2 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="text-center bg-light p-4 rounded h-100">
+        <img src="360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" class="img-fluid rounded-circle mb-3" alt="Topper 2" style="width: 120px; height: 120px; object-fit: cover;">
+        <h5 class="mb-1">Ahmed Raza</h5>
+        <small class="text-muted">Class 10 &nbsp;&nbsp;&nbsp; Marks 94%</small>
+      </div>
+    </div>
+
+    <!-- Topper 3 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="text-center bg-light p-4 rounded h-100">
+        <img src="images.jpeg" class="img-fluid rounded-circle mb-3" alt="Topper 3" style="width: 120px; height: 120px; object-fit: cover;">
+        <h5 class="mb-1">Fatima Noor</h5>
+        <small class="text-muted">Class 10 &nbsp;&nbsp;&nbsp; Marks 93%</small>
+      </div>
+    </div>
+
+    <!-- Topper 4 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="text-center bg-light p-4 rounded h-100">
+        <img src="young-bearded-man-with-striped-shirt_273609-5677.avif" class="img-fluid rounded-circle mb-3" alt="Topper 4" style="width: 120px; height: 120px; object-fit: cover;">
+        <h5 class="mb-1">Bilal Khan</h5>
+        <small class="text-muted">Class 10 &nbsp;&nbsp;&nbsp; Marks 92%</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="footer mt-5 text-white position-relative" style="background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center;">
+  <div class="container py-5">
+    <div class="row">
+
+      <!-- Quick Links -->
+      <div class="col-md-3 mb-4">
+        <h5 class="text-uppercase fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Subjects</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Our Partners</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Team</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Schools</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Entrance Exams</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3 mb-4">
+        <h5 class="text-uppercase fw-bold">Contact</h5>
+        <p class="mb-1"><i class="fas fa-phone me-2"></i> 0897454321</p>
+        <p class="mb-1"><i class="fas fa-envelope me-2"></i> info@schoolname.com</p>
+        <p><i class="fas fa-map-marker-alt me-2"></i> 123 School Street, City, Country</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-3 mb-4">
+        <h5 class="text-uppercase fw-bold">Newsletter</h5>
+        <p>Get the latest updates and news directly in your inbox.</p>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" placeholder="Your Email">
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-3 mb-4">
+        <h5 class="text-uppercase fw-bold">Find Us On</h5>
+        <div class="d-flex gap-3 mt-2">
+          <a href="#" class="text-white-50 fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white-50 fs-5"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white-50 fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white-50 fs-5"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center pt-3 border-top border-secondary mt-4">
+      <small class="text-white-50">Copyright © 2025 Our School. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
